@@ -2,7 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = ['chicago', 'new york city', 'washington']
+CITY_LIST = ['chicago', 'new york city', 'washington']
 
 MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
 
@@ -22,7 +22,7 @@ def get_filters():
     day = ''
     print('Hello! Let\'s explore some US bikeshare data!')
 
-    while city not in CITY_DATA:
+    while city not in CITY_LIST:
         city = input('What city\'s data are you interested in, Chicago, Washington or New York City? ')
         city = city.lower()
 
@@ -55,7 +55,7 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     city = city.lower()
-    if city not in CITY_DATA:
+    if city not in CITY_LIST:
         raise Exception("Only available cities are Chicago, Washington and New York City. The value of the city was: {}".format(city))
     if city == 'new york city':
         city = 'new_york_city'
@@ -165,7 +165,7 @@ def display_raw_data(df):
         if user_response == 'yes':
             print(df.iloc[count:count + 5])
             count += 5
-            user_response = input('Do you want to see some raw data? (enter "yes" or "no")')
+            user_response = input('Do you want to see more raw data?')
         elif user_response == 'no':
             break
         else:
