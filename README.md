@@ -1,15 +1,14 @@
 ### Date created
-Include the date you created this project and README file.
+19th of May
 
 ### Project Title
-Replace the Project Title
+Bikeshare
 
 ### Description
-Describe what your project is about and what it does
+Bikeshare allows user to understand better the sample data we have offered :)
 
 ### Files used
-Include the files used
+So far bikeshare_2.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+To my parents that always knew I would get an Oscar. To Richard, that has made a git tutorial enjoyable. And the tutor correcting this and is surely sick of seeing projects that are all the same.
