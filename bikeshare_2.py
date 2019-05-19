@@ -165,7 +165,7 @@ def display_raw_data(df):
         if user_response == 'yes':
             print(df.iloc[count:count + 5])
             count += 5
-            user_response = input('Do you want to see some raw data? (enter "yes" or "no")')
+            user_response = input('Do you want to see more raw data?')
         elif user_response == 'no':
             break
         else:
